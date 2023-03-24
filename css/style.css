@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    padding: 20px 0px 40px 0px;
+}
+
+.darkhead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.darkhead h1{
+    width: 60%;
+    font-size: 32px;
+    text-align: left;
+}
+.darkhead ul li{
+    display: inline-block ;
+}
+
+body {
+    color: #222;
+    -webkit-transition: background-color 800ms ease;
+    transition: background-color 800ms ease;
+  }
+  
+  body.dark {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  body.dark img {
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
+  }
+  button {
+    border: 1px solid #333;
+    padding: 0.5rem;
+    background: #333;
+    border-radius: 5px;
+    -webkit-transition: 200ms ease;
+    transition: 200ms ease;
+    color: #eaeaea;
+}
+  
+  /* more dark mode styles here */
+/* body{
+    min-height: 100vh;
+    background-color: #e0e0e0;
+    transition: all .6s ;
+
+}
+.dark_button{
+    width: 100px;
+    height: 60px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #27123a;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.dark_button .dark_inner{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #ffc207;
+    border-radius: 50%;
+    transition: all .6s;
+
+}
+.dark_button .dark_inner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 100%;
+    height: 100%;
+    background-color: #27173a;
+    border-radius: 50%;
+    transform: scale(0);
+
+}
+.dark_button .dark_inner .active{
+    transform: translate(calc(100px - 60px));
+}
+.dark_button .dark_inner .active::before{
+    left: -25px;
+    transform: scale(1);
+} */
+
+
+
+
+
+
+
+
+img{
+    width: 100%;
+    height: 700px;
+    display: block;
+    object-fit: cover;
+    border-radius: 5%;
+    
+}
+#banner{
+    position: relative;
+}
+
+#banner .myslider{
+    
+    height: 700px;
+    padding: 0px 15px;
+    border-radius: 25px;
+    overflow: hidden;
+    transform: scale(0.8);
+    filter: blur(2px);
+    transition: 0.35s ease-in;
+    color: white;
+    
+}
+
+
+#banner .arrows .leftarrow,
+#banner .arrows .rightarrow{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 9999;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+#banner .arrows .rightarrow{
+    top: 45%;
+    right: 33%;    
+}
+#banner .arrows .leftarrow{
+    top: 45%;
+    left: 33%;    
+}
+
+
+#banner .slick-center{
+  transform: scale(1);
+  filter: blur(0px);
+  transition: .35s ease-out;
+     
+    
+}
+#banner .slick-dots{
+    text-align: center;
+    list-style: none;
+}
+#banner .slick-dots li{
+    display: inline-block;
+}
+
+#banner .slick-dots li button{
+    width: 20px;
+    height: 10px;
+    color: transparent;
+    margin:  20px 10px 0px 10px;
+    border-radius: 15px;
+    background-color:  plum;
+    border: none;
+    transition: 0.3s;
+}
+
+#banner .slick-dots li.slick-active button{
+    width: 40px;
+    background-color: purple;
+}
+
+
+    
